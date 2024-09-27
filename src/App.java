@@ -7,7 +7,10 @@ public class App {
 
         MetodosOrdenamiento mO = new MetodosOrdenamiento();
 
-        arregloArreglado = mO.MethodSort(arreglo);
+        arregloArreglado = mO.MethodSort(arreglo, false);
+        mO.printArray(arregloArreglado);
+
+        arregloArreglado = mO.MethodSort(arreglo, true);
         mO.printArray(arregloArreglado);
 
     }
